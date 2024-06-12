@@ -9,5 +9,5 @@ package taschenrechner;
  * @author luisfer
  */
 public class Calculator {
-    
+
 }
