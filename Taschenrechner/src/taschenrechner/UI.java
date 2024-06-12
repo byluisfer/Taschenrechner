@@ -571,8 +571,10 @@ public class UI extends javax.swing.JFrame {
 
     private void buttonPointActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonPointActionPerformed
         zt = result.getText();
+        if (!zt.contains(".") && !zt.isEmpty()){
         z = zt+".";
         result.setText(z);
+        }
     }//GEN-LAST:event_buttonPointActionPerformed
 
     private void buttonACActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonACActionPerformed
