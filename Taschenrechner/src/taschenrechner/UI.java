@@ -582,8 +582,10 @@ public class UI extends javax.swing.JFrame {
 
     private void buttonPrefixActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonPrefixActionPerformed
         zt = result.getText();
+        if (!zt.startsWith("-")){
         z = "-"+zt;
         result.setText(z);
+        }
     }//GEN-LAST:event_buttonPrefixActionPerformed
 
     /**
