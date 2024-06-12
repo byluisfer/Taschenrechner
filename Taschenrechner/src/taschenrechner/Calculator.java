@@ -4,9 +4,6 @@
  */
 package taschenrechner;
 
-import java.util.Scanner;
-import javax.swing.SwingUtilities;
-
 /**
  *
  * @author luisfer

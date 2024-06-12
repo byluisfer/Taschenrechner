@@ -4,8 +4,6 @@
  */
 package taschenrechner;
 
-import java.awt.event.ActionEvent;
-
 /**
  *
  * @author luisfer
