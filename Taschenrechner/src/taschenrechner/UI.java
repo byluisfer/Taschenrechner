@@ -234,6 +234,7 @@ public class UI extends javax.swing.JFrame {
         jButton21.setBackground(new java.awt.Color(255, 153, 51));
         jButton21.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jButton21.setText("Eu");
+        jButton21.setToolTipText("Eulerische Zahl");
         jButton21.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton21ActionPerformed(evt);
@@ -279,6 +280,7 @@ public class UI extends javax.swing.JFrame {
         jButton26.setBackground(new java.awt.Color(255, 153, 51));
         jButton26.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jButton26.setText("RCL\n");
+        jButton26.setToolTipText("Recall");
         jButton26.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton26ActionPerformed(evt);
@@ -315,6 +317,7 @@ public class UI extends javax.swing.JFrame {
         jButton30.setBackground(new java.awt.Color(255, 153, 51));
         jButton30.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jButton30.setText("STO");
+        jButton30.setToolTipText("Storage");
         jButton30.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton30ActionPerformed(evt);
@@ -342,6 +345,7 @@ public class UI extends javax.swing.JFrame {
         jButton33.setBackground(new java.awt.Color(255, 153, 51));
         jButton33.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jButton33.setText("G");
+        jButton33.setToolTipText("Gravitationskonstante");
         jButton33.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton33ActionPerformed(evt);

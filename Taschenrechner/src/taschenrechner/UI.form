@@ -452,6 +452,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton21ActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton21.setToolTipText(&quot;Eulerische Zahl&quot;);&#xd;&#xa;"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="buttonSquare">
           <Properties>
@@ -522,6 +525,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton26ActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton26.setToolTipText(&quot;Recall&quot;);&#xd;&#xa;"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jButton27">
           <Properties>
@@ -578,6 +584,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton30ActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton30.setToolTipText(&quot;Storage&quot;);&#xd;&#xa;"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jButton31">
           <Properties>
@@ -620,6 +629,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton33ActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton33.setToolTipText(&quot;Gravitationskonstante&quot;);&#xd;&#xa;"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="buttonAC1">
           <Properties>
