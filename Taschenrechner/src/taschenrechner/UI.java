@@ -126,6 +126,11 @@ public class UI extends javax.swing.JFrame {
         jButton8.setBackground(new java.awt.Color(255, 153, 51));
         jButton8.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jButton8.setText("%\n");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
 
         button3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         button3.setText("3\n");
@@ -228,6 +233,11 @@ public class UI extends javax.swing.JFrame {
         jButton21.setBackground(new java.awt.Color(255, 153, 51));
         jButton21.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jButton21.setText("Eu");
+        jButton21.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton21ActionPerformed(evt);
+            }
+        });
 
         jButton22.setBackground(new java.awt.Color(255, 153, 51));
         jButton22.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
@@ -546,7 +556,9 @@ public class UI extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton24ActionPerformed
 
     private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
-        // TODO add your handling code here:
+        zt = result.getText();
+        z = zt+"3.14";
+        result.setText(z);
     }//GEN-LAST:event_jButton25ActionPerformed
 
     private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
@@ -675,6 +687,10 @@ public class UI extends javax.swing.JFrame {
         }
         result.setText(String.valueOf(n1n2));
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton21ActionPerformed
     private void buttonOperatorAction(String operator) {
     
 }
