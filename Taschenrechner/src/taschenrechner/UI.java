@@ -485,7 +485,7 @@ public class UI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-        String z, zt, p1;
+        String z, z2, zt, p1;
         double num1, num2, check;
         double n1n2, square;
         double p;
@@ -657,10 +657,12 @@ public class UI extends javax.swing.JFrame {
 
     private void buttonPrefixActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonPrefixActionPerformed
         zt = result.getText();
-        if (!zt.startsWith("-")){
-        z = "-"+zt;
-        result.setText(z);
-        }
+        if (!zt.isEmpty()) {
+        double number = Double.parseDouble(zt);
+        double toggledNumber = -number;
+        result.setText(String.valueOf(toggledNumber));
+    }
+        
     }//GEN-LAST:event_buttonPrefixActionPerformed
 
     private void buttonAdditionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonAdditionActionPerformed
