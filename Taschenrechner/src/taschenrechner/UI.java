@@ -81,7 +81,7 @@ public class UI extends javax.swing.JFrame {
         jScrollPane1.setViewportView(result);
 
         jButton1.setBackground(new java.awt.Color(255, 51, 51));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         jButton1.setText("=");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -89,7 +89,7 @@ public class UI extends javax.swing.JFrame {
             }
         });
 
-        button9.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        button9.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         button9.setText("9\n");
         button9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -97,7 +97,7 @@ public class UI extends javax.swing.JFrame {
             }
         });
 
-        buttonMultiplication.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        buttonMultiplication.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         buttonMultiplication.setText("X");
         buttonMultiplication.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -105,7 +105,7 @@ public class UI extends javax.swing.JFrame {
             }
         });
 
-        buttonSubtraction.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        buttonSubtraction.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         buttonSubtraction.setText("-");
         buttonSubtraction.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -113,7 +113,7 @@ public class UI extends javax.swing.JFrame {
             }
         });
 
-        buttonAddition.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        buttonAddition.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         buttonAddition.setText("+");
         buttonAddition.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -121,7 +121,7 @@ public class UI extends javax.swing.JFrame {
             }
         });
 
-        buttonDivision.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        buttonDivision.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         buttonDivision.setText("/\n");
         buttonDivision.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -130,7 +130,7 @@ public class UI extends javax.swing.JFrame {
         });
 
         jButton8.setBackground(new java.awt.Color(255, 153, 51));
-        jButton8.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jButton8.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         jButton8.setText("% ");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -138,7 +138,7 @@ public class UI extends javax.swing.JFrame {
             }
         });
 
-        button3.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        button3.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         button3.setText("3\n");
         button3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -146,7 +146,7 @@ public class UI extends javax.swing.JFrame {
             }
         });
 
-        buttonPoint.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        buttonPoint.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         buttonPoint.setText(".\n");
         buttonPoint.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -154,7 +154,7 @@ public class UI extends javax.swing.JFrame {
             }
         });
 
-        button6.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        button6.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         button6.setText("6\n");
         button6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -163,7 +163,7 @@ public class UI extends javax.swing.JFrame {
         });
 
         buttonAC.setBackground(new java.awt.Color(255, 102, 51));
-        buttonAC.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        buttonAC.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         buttonAC.setText("AC ");
         buttonAC.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -171,7 +171,7 @@ public class UI extends javax.swing.JFrame {
             }
         });
 
-        button5.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        button5.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         button5.setText("5\n");
         button5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -179,7 +179,7 @@ public class UI extends javax.swing.JFrame {
             }
         });
 
-        button2.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        button2.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         button2.setText("2\n");
         button2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -187,7 +187,7 @@ public class UI extends javax.swing.JFrame {
             }
         });
 
-        button7.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        button7.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         button7.setText("7\n");
         button7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -196,7 +196,7 @@ public class UI extends javax.swing.JFrame {
         });
 
         buttonPrefix.setBackground(new java.awt.Color(255, 153, 51));
-        buttonPrefix.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        buttonPrefix.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         buttonPrefix.setText("+/-\n");
         buttonPrefix.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -204,7 +204,7 @@ public class UI extends javax.swing.JFrame {
             }
         });
 
-        button4.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        button4.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         button4.setText("4\n");
         button4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -212,7 +212,7 @@ public class UI extends javax.swing.JFrame {
             }
         });
 
-        button1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        button1.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         button1.setText("1\n");
         button1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -220,7 +220,7 @@ public class UI extends javax.swing.JFrame {
             }
         });
 
-        button8.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        button8.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         button8.setText("8\n");
         button8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -228,7 +228,7 @@ public class UI extends javax.swing.JFrame {
             }
         });
 
-        button0.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        button0.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         button0.setText("0\n");
         button0.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -237,7 +237,7 @@ public class UI extends javax.swing.JFrame {
         });
 
         jButton21.setBackground(new java.awt.Color(255, 153, 51));
-        jButton21.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jButton21.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         jButton21.setText("Eu");
         jButton21.setToolTipText("Eulerische Zahl");
         jButton21.addActionListener(new java.awt.event.ActionListener() {
@@ -247,7 +247,7 @@ public class UI extends javax.swing.JFrame {
         });
 
         buttonSquare.setBackground(new java.awt.Color(255, 153, 51));
-        buttonSquare.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        buttonSquare.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         buttonSquare.setText("X²\n");
         buttonSquare.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -256,7 +256,7 @@ public class UI extends javax.swing.JFrame {
         });
 
         jButton23.setBackground(new java.awt.Color(255, 153, 51));
-        jButton23.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jButton23.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         jButton23.setText("log2\n");
         jButton23.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -265,7 +265,7 @@ public class UI extends javax.swing.JFrame {
         });
 
         jButton24.setBackground(new java.awt.Color(255, 153, 51));
-        jButton24.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jButton24.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         jButton24.setText("!");
         jButton24.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -274,7 +274,7 @@ public class UI extends javax.swing.JFrame {
         });
 
         jButton25.setBackground(new java.awt.Color(255, 153, 51));
-        jButton25.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jButton25.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         jButton25.setText("π\n");
         jButton25.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -283,7 +283,7 @@ public class UI extends javax.swing.JFrame {
         });
 
         jButton26.setBackground(new java.awt.Color(255, 153, 51));
-        jButton26.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jButton26.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         jButton26.setText("RCL\n");
         jButton26.setToolTipText("Recall");
         jButton26.addActionListener(new java.awt.event.ActionListener() {
@@ -293,7 +293,7 @@ public class UI extends javax.swing.JFrame {
         });
 
         jButton27.setBackground(new java.awt.Color(255, 153, 51));
-        jButton27.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jButton27.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         jButton27.setText("x^y");
         jButton27.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -302,7 +302,7 @@ public class UI extends javax.swing.JFrame {
         });
 
         jButton28.setBackground(new java.awt.Color(255, 153, 51));
-        jButton28.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jButton28.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         jButton28.setText("√\n");
         jButton28.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -311,7 +311,7 @@ public class UI extends javax.swing.JFrame {
         });
 
         jButton29.setBackground(new java.awt.Color(255, 153, 51));
-        jButton29.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jButton29.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         jButton29.setText("log10 ");
         jButton29.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -320,7 +320,7 @@ public class UI extends javax.swing.JFrame {
         });
 
         jButton30.setBackground(new java.awt.Color(255, 153, 51));
-        jButton30.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jButton30.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         jButton30.setText("STO");
         jButton30.setToolTipText("Storage");
         jButton30.addActionListener(new java.awt.event.ActionListener() {
@@ -330,7 +330,7 @@ public class UI extends javax.swing.JFrame {
         });
 
         jButton31.setBackground(new java.awt.Color(255, 153, 51));
-        jButton31.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jButton31.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         jButton31.setText("log(n)");
         jButton31.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -339,7 +339,7 @@ public class UI extends javax.swing.JFrame {
         });
 
         jButton32.setBackground(new java.awt.Color(255, 153, 51));
-        jButton32.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jButton32.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         jButton32.setText("√");
         jButton32.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -348,7 +348,7 @@ public class UI extends javax.swing.JFrame {
         });
 
         jButton33.setBackground(new java.awt.Color(255, 153, 51));
-        jButton33.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jButton33.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         jButton33.setText("G");
         jButton33.setToolTipText("Gravitationskonstante");
         jButton33.addActionListener(new java.awt.event.ActionListener() {
@@ -358,7 +358,7 @@ public class UI extends javax.swing.JFrame {
         });
 
         buttonAC1.setBackground(new java.awt.Color(255, 102, 51));
-        buttonAC1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        buttonAC1.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         buttonAC1.setText("DEL");
         buttonAC1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -533,7 +533,7 @@ public class UI extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 3, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
