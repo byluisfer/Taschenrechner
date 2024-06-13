@@ -567,7 +567,12 @@ public class UI extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton23ActionPerformed
 
     private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
-        // TODO add your handling code here:
+        zt = result.getText();
+        long fakultaet = 1;
+        for (int i = 1; i <= Integer.valueOf(zt); ++i) {
+            fakultaet *= i;
+        }
+        result.setText(String.valueOf(fakultaet));
     }//GEN-LAST:event_jButton24ActionPerformed
 
     private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
