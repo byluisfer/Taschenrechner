@@ -489,6 +489,7 @@ public class UI extends javax.swing.JFrame {
         double num1, num2, check;
         double n1n2, square;
         double p;
+        int sqrt, sqr;
     
     private void button6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button6ActionPerformed
         zt = result.getText();
@@ -584,7 +585,15 @@ public class UI extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton27ActionPerformed
 
     private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
-        // TODO add your handling code here:
+        try {
+            num1 = Double.parseDouble(result.getText());
+        } catch (NumberFormatException f) {
+            result.setText("Invalid Format");
+            return;
+        }
+        
+        double squareRoot = Math.sqrt(num1);
+        result.setText(String.valueOf(squareRoot));
     }//GEN-LAST:event_jButton28ActionPerformed
 
     private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton29ActionPerformed
