@@ -716,30 +716,6 @@ public class UI extends javax.swing.JFrame {
     performOperation();
     result.setText(String.valueOf(currentResult));
     currentOperation = 0;
-    
-    try{
-    num2=Double.parseDouble(result.getText());
-    }catch(Exception f){
-      result.setText("ENTER NUMBER FIRST ");
-      return;
-    }
-        
-        if(check==1) {
-            n1n2 =num1+num2;
-        }
-        if(check==2) {
-            n1n2 =num1-num2;
-        }
-        if(check==3) {
-            n1n2 =num1*num2;
-        }
-        if(check==4) {
-            n1n2 =num1/num2;
-        }
-        if(check==5) {
-            n1n2 =Math.log(num1) / Math.log(num2);
-        }
-        result.setText(String.valueOf(n1n2));
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void buttonAC1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonAC1ActionPerformed
