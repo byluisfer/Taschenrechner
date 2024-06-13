@@ -488,8 +488,7 @@ public class UI extends javax.swing.JFrame {
         String z, z2, zt, p1;
         double num1, num2, check;
         double n1n2, square;
-        double p;
-        int sqrt, sqr;
+        double p, e;
     
     private void button6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button6ActionPerformed
         zt = result.getText();
@@ -557,7 +556,8 @@ public class UI extends javax.swing.JFrame {
     }//GEN-LAST:event_buttonSquareActionPerformed
 
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {
-        
+        e = Math.E;
+        result.setText(String.valueOf(e));
     }
     
     private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
