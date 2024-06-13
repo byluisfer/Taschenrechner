@@ -504,6 +504,8 @@ public class UI extends javax.swing.JFrame {
         double num1, num2, check;
         double n1n2, square;
         double p, e, l10;
+        private double currentResult = 0;
+        private int currentOperation = 0;
     
     private void button6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button6ActionPerformed
         zt = result.getText();
@@ -629,7 +631,15 @@ public class UI extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton30ActionPerformed
 
     private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
+        try{ num1=Double.parseDouble(result.getText());
+    }catch(NumberFormatException f){
+      result.setText("Invalid Format");
+      return;
+    }
+        z="";
+        result.setText(z);
         
+        check=5;
     }//GEN-LAST:event_jButton31ActionPerformed
 
     private void jButton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton32ActionPerformed
@@ -650,14 +660,9 @@ public class UI extends javax.swing.JFrame {
     }
     
     private void buttonDivisionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonDivisionActionPerformed
-        try{ num1=Double.parseDouble(result.getText());
-    }catch(NumberFormatException f){
-      result.setText("Invalid Format");
-      return;
-    }
-  z="";
-  result.setText(z);
-  check=4;
+    performOperation();
+    result.setText("");
+    currentOperation = 4;
     }//GEN-LAST:event_buttonDivisionActionPerformed
 
     private void button3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button3ActionPerformed
@@ -690,41 +695,29 @@ public class UI extends javax.swing.JFrame {
     }//GEN-LAST:event_buttonPrefixActionPerformed
 
     private void buttonAdditionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonAdditionActionPerformed
-        
-        try{ num1=Double.parseDouble(result.getText());
-    }catch(NumberFormatException f){
-      result.setText("Invalid Format");
-      return;
-    }
-  z="";
-  result.setText(z);
-  check=1;
+    performOperation();
+    result.setText("");
+    currentOperation = 1;
     }//GEN-LAST:event_buttonAdditionActionPerformed
 
     private void buttonSubtractionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSubtractionActionPerformed
-        try{ num1=Double.parseDouble(result.getText());
-    }catch(NumberFormatException f){
-      result.setText("Invalid Format");
-      return;
-    }
-  z="";
-  result.setText(z);
-  check=2;
+    performOperation();
+    result.setText("");
+    currentOperation = 2;
     }//GEN-LAST:event_buttonSubtractionActionPerformed
 
     private void buttonMultiplicationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMultiplicationActionPerformed
-        try{ num1=Double.parseDouble(result.getText());
-    }catch(NumberFormatException f){
-      result.setText("Invalid Format");
-      return;
-    }
-  z="";
-  result.setText(z);
-  check=3;
+    performOperation();
+    result.setText("");
+    currentOperation = 3;
     }//GEN-LAST:event_buttonMultiplicationActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        try{
+    performOperation();
+    result.setText(String.valueOf(currentResult));
+    currentOperation = 0;
+    
+    try{
     num2=Double.parseDouble(result.getText());
     }catch(Exception f){
       result.setText("ENTER NUMBER FIRST ");
@@ -743,6 +736,9 @@ public class UI extends javax.swing.JFrame {
         if(check==4) {
             n1n2 =num1/num2;
         }
+        if(check==5) {
+            n1n2 =Math.log(num1) / Math.log(num2);
+        }
         result.setText(String.valueOf(n1n2));
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -752,8 +748,30 @@ public class UI extends javax.swing.JFrame {
         result.setText(currentText.substring(0, currentText.length() - 1));
     }
     }//GEN-LAST:event_buttonAC1ActionPerformed
-    private void buttonOperatorAction(String operator) {
-    
+    private void performOperation() {
+    try {
+        double num = Double.parseDouble(result.getText());
+        switch (currentOperation) {
+            case 1:
+                currentResult += num;
+                break;
+            case 2:
+                currentResult -= num;
+                break;
+            case 3:
+                currentResult *= num;
+                break;
+            case 4:
+                currentResult /= num;
+                break;
+            default:
+                currentResult = num;
+                break;
+        }
+    } catch (NumberFormatException f) {
+        result.setText("Invalid Format");
+        return;
+    }
 }
 
     /**
