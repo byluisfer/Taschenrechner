@@ -480,9 +480,10 @@ public class UI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-        String z, zt;
+        String z, zt, p1;
         double num1, num2, check;
         double n1n2;
+        double p;
     
     private void button6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button6ActionPerformed
         zt = result.getText();
@@ -591,7 +592,12 @@ public class UI extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton33ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {
+        zt = result.getText();
+        z = zt;
+        p = n1n2*100;
+        p1 = p + "%";
         
+        result.setText(String.valueOf(p1));
     }
     
     private void buttonDivisionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonDivisionActionPerformed
