@@ -552,10 +552,10 @@ public class UI extends javax.swing.JFrame {
 
     private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
        zt = result.getText();
-        if (!zt.isEmpty() && Character.isDigit(zt.charAt(zt.length() - 1)) && !zt.contains("3.141")) {
+       if (!zt.startsWith("3.141")){
             String z = zt + "3.141";
             result.setText(z);
-        }
+       }
     }//GEN-LAST:event_jButton25ActionPerformed
 
     private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
