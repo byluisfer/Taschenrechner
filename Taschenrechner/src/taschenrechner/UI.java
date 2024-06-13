@@ -629,7 +629,15 @@ public class UI extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton30ActionPerformed
 
     private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
+        try{ num1=Double.parseDouble(result.getText());
+    }catch(NumberFormatException f){
+      result.setText("Invalid Format");
+      return;
+    }
+        z="";
+        result.setText(z);
         
+        check=5;
     }//GEN-LAST:event_jButton31ActionPerformed
 
     private void jButton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton32ActionPerformed
@@ -742,6 +750,9 @@ public class UI extends javax.swing.JFrame {
         }
         if(check==4) {
             n1n2 =num1/num2;
+        }
+        if(check==5) {
+            n1n2 =Math.log(num1) / Math.log(num2);
         }
         result.setText(String.valueOf(n1n2));
     }//GEN-LAST:event_jButton1ActionPerformed
