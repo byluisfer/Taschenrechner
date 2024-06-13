@@ -652,12 +652,17 @@ public class UI extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton33ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {
-        zt = result.getText();
-        z = zt;
-        p = n1n2*100;
-        p1 = p + "%";
-        
-        result.setText(String.valueOf(p1));
+    performOperation();
+    
+    try {
+        num1 = Double.parseDouble(result.getText());
+    } catch (NumberFormatException f) {
+        result.setText("Invalid Format");
+        return;
+    }
+    
+    result.setText("");
+    currentOperation = 6;
     }
     
     private void buttonDivisionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonDivisionActionPerformed
@@ -743,6 +748,9 @@ public class UI extends javax.swing.JFrame {
                 break;
             case 5:
                 currentResult = Math.log(num1) / Math.log(num);
+                break;
+            case 6:
+                currentResult = num1*100/num;
                 break;
             default:
                 currentResult = num;
