@@ -59,7 +59,7 @@
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="jButton28" min="-2" pref="92" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="jButton22" min="-2" pref="92" max="-2" attributes="0"/>
+                          <Component id="buttonSquare" min="-2" pref="92" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <Component id="jButton31" min="-2" pref="92" max="-2" attributes="0"/>
@@ -162,7 +162,7 @@
                       <Component id="button6" alignment="3" min="-2" pref="70" max="-2" attributes="0"/>
                       <Component id="button5" alignment="3" min="-2" pref="70" max="-2" attributes="0"/>
                       <Component id="button4" alignment="3" min="-2" pref="70" max="-2" attributes="0"/>
-                      <Component id="jButton22" alignment="3" min="-2" pref="70" max="-2" attributes="0"/>
+                      <Component id="buttonSquare" alignment="3" min="-2" pref="70" max="-2" attributes="0"/>
                       <Component id="jButton28" alignment="3" min="-2" pref="70" max="-2" attributes="0"/>
                       <Component id="jButton32" alignment="3" min="-2" pref="70" max="-2" attributes="0"/>
                   </Group>
@@ -445,7 +445,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton21ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton22">
+        <Component class="javax.swing.JButton" name="buttonSquare">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="33" green="99" red="ff" type="rgb"/>
@@ -456,7 +456,7 @@
             <Property name="text" type="java.lang.String" value="X&#xb2;&#xa;"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton22ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonSquareActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jButton23">

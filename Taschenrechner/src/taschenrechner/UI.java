@@ -51,7 +51,7 @@ public class UI extends javax.swing.JFrame {
         button8 = new javax.swing.JButton();
         button0 = new javax.swing.JButton();
         jButton21 = new javax.swing.JButton();
-        jButton22 = new javax.swing.JButton();
+        buttonSquare = new javax.swing.JButton();
         jButton23 = new javax.swing.JButton();
         jButton24 = new javax.swing.JButton();
         jButton25 = new javax.swing.JButton();
@@ -233,13 +233,18 @@ public class UI extends javax.swing.JFrame {
         jButton21.setBackground(new java.awt.Color(255, 153, 51));
         jButton21.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jButton21.setText("Eu");
-
-        jButton22.setBackground(new java.awt.Color(255, 153, 51));
-        jButton22.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton22.setText("X²\n");
-        jButton22.addActionListener(new java.awt.event.ActionListener() {
+        jButton21.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton22ActionPerformed(evt);
+                jButton21ActionPerformed(evt);
+            }
+        });
+
+        buttonSquare.setBackground(new java.awt.Color(255, 153, 51));
+        buttonSquare.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        buttonSquare.setText("X²\n");
+        buttonSquare.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonSquareActionPerformed(evt);
             }
         });
 
@@ -359,7 +364,7 @@ public class UI extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(jButton28, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton22, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(buttonSquare, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addComponent(jButton31, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
@@ -443,7 +448,7 @@ public class UI extends javax.swing.JFrame {
                     .addComponent(button6, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(button5, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(button4, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton22, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(buttonSquare, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton28, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton32, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
@@ -482,7 +487,7 @@ public class UI extends javax.swing.JFrame {
 
         String z, zt, p1;
         double num1, num2, check;
-        double n1n2;
+        double n1n2, square;
         double p;
     
     private void button6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button6ActionPerformed
@@ -539,10 +544,21 @@ public class UI extends javax.swing.JFrame {
         result.setText(z);
     }//GEN-LAST:event_button0ActionPerformed
 
-    private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton22ActionPerformed
+    private void buttonSquareActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSquareActionPerformed
+        try{ num1=Double.parseDouble(result.getText());
+    }catch(NumberFormatException f){
+      result.setText("Invalid Format");
+      return;
+    }
+  square = num1*num1;
+  result.setText(String.valueOf(square));
+        
+    }//GEN-LAST:event_buttonSquareActionPerformed
 
+    private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {
+        
+    }
+    
     private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton23ActionPerformed
@@ -719,10 +735,10 @@ public class UI extends javax.swing.JFrame {
     private javax.swing.JButton buttonMultiplication;
     private javax.swing.JButton buttonPoint;
     private javax.swing.JButton buttonPrefix;
+    private javax.swing.JButton buttonSquare;
     private javax.swing.JButton buttonSubtraction;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton21;
-    private javax.swing.JButton jButton22;
     private javax.swing.JButton jButton23;
     private javax.swing.JButton jButton24;
     private javax.swing.JButton jButton25;
