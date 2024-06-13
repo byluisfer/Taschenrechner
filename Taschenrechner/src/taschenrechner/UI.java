@@ -77,6 +77,11 @@ public class UI extends javax.swing.JFrame {
         jButton1.setBackground(new java.awt.Color(255, 51, 51));
         jButton1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jButton1.setText("=");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         button9.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         button9.setText("9\n");
@@ -471,6 +476,8 @@ public class UI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
         String z, zt;
+        double num1, num2, check;
+        double n1n2;
     
     private void button6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button6ActionPerformed
         zt = result.getText();
@@ -575,7 +582,14 @@ public class UI extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton33ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        buttonOperatorAction("/");
+        try{ num1=Double.parseDouble(result.getText());
+    }catch(NumberFormatException f){
+      result.setText("Invalid Format");
+      return;
+    }
+  z="";
+  result.setText(z);
+  check=4;
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void button3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button3ActionPerformed
@@ -606,22 +620,63 @@ public class UI extends javax.swing.JFrame {
     }//GEN-LAST:event_buttonPrefixActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        buttonOperatorAction("+");
+        
+        try{ num1=Double.parseDouble(result.getText());
+    }catch(NumberFormatException f){
+      result.setText("Invalid Format");
+      return;
+    }
+  z="";
+  result.setText(z);
+  check=1;
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        buttonOperatorAction("-");
+        try{ num1=Double.parseDouble(result.getText());
+    }catch(NumberFormatException f){
+      result.setText("Invalid Format");
+      return;
+    }
+  z="";
+  result.setText(z);
+  check=2;
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-    buttonOperatorAction("x");
-    }//GEN-LAST:event_jButton3ActionPerformed
-    private void buttonOperatorAction(String operator) {
-        String zt = result.getText();
-        if (!zt.isEmpty() && Character.isDigit(zt.charAt(zt.length() - 1))) {
-        String z = zt + operator;
-        result.setText(z);
+        try{ num1=Double.parseDouble(result.getText());
+    }catch(NumberFormatException f){
+      result.setText("Invalid Format");
+      return;
     }
+  z="";
+  result.setText(z);
+  check=3;
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        try{
+    num2=Double.parseDouble(result.getText());
+    }catch(Exception f){
+      result.setText("ENTER NUMBER FIRST ");
+      return;
+    }
+        
+        if(check==1) {
+            n1n2 =num1+num2;
+        }
+        if(check==2) {
+            n1n2 =num1-num2;
+        }
+        if(check==3) {
+            n1n2 =num1*num2;
+        }
+        if(check==4) {
+            n1n2 =num1/num2;
+        }
+        result.setText(String.valueOf(n1n2));
+    }//GEN-LAST:event_jButton1ActionPerformed
+    private void buttonOperatorAction(String operator) {
+    
 }
 
     /**
