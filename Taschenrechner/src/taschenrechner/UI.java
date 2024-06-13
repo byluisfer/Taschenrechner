@@ -121,6 +121,11 @@ public class UI extends javax.swing.JFrame {
         jButton8.setBackground(new java.awt.Color(255, 153, 51));
         jButton8.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jButton8.setText("%\n");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
 
         button3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         button3.setText("3\n");
@@ -616,6 +621,10 @@ public class UI extends javax.swing.JFrame {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
     buttonOperatorAction("x");
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+    buttonOperatorAction("%");
+    }//GEN-LAST:event_jButton8ActionPerformed
     private void buttonOperatorAction(String operator) {
         String zt = result.getText();
         if (!zt.isEmpty() && Character.isDigit(zt.charAt(zt.length() - 1))) {
