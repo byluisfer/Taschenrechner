@@ -552,7 +552,7 @@ public class UI extends javax.swing.JFrame {
 
     private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
        zt = result.getText();
-        z = zt+"3.14";
+        z = zt+"3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679";
         result.setText(z);
     }//GEN-LAST:event_jButton25ActionPerformed
 
