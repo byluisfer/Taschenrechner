@@ -631,15 +631,16 @@ public class UI extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton30ActionPerformed
 
     private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
-        try{ num1=Double.parseDouble(result.getText());
-    }catch(NumberFormatException f){
-      result.setText("Invalid Format");
-      return;
+    performOperation();
+
+    try {
+        num1 = Double.parseDouble(result.getText());
+    } catch (NumberFormatException f) {
+        result.setText("Invalid Format");
+        return;
     }
-        z="";
-        result.setText(z);
-        
-        check=5;
+    result.setText("");
+    currentOperation = 5;
     }//GEN-LAST:event_jButton31ActionPerformed
 
     private void jButton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton32ActionPerformed
@@ -739,6 +740,9 @@ public class UI extends javax.swing.JFrame {
                 break;
             case 4:
                 currentResult /= num;
+                break;
+            case 5:
+                currentResult = Math.log(num1) / Math.log(num);
                 break;
             default:
                 currentResult = num;
