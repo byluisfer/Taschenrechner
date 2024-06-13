@@ -504,10 +504,10 @@ public class UI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-        String z, z2, zt, p1;
-        double num1, num2, check;
-        double n1n2, square;
-        double p, e, l10;
+        String z, zt;
+        double num1;
+        double square;
+        double e, l10;
         private double currentResult = 0;
         private int currentOperation = 0;
     
@@ -568,11 +568,11 @@ public class UI extends javax.swing.JFrame {
     private void buttonSquareActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSquareActionPerformed
         try{ num1=Double.parseDouble(result.getText());
     }catch(NumberFormatException f){
-      result.setText("Invalid Format");
-      return;
+        result.setText("Invalid Format");
+        return;
     }
-  square = num1*num1;
-  result.setText(String.valueOf(square));
+    square = num1*num1;
+    result.setText(String.valueOf(square));
         
     }//GEN-LAST:event_buttonSquareActionPerformed
 
@@ -593,7 +593,7 @@ public class UI extends javax.swing.JFrame {
         for (int i = 1; i <= Integer.valueOf(zt); ++i) {
             fakultaet *= i;
         }
-        result.setText(String.valueOf(fakultaet));
+            result.setText(String.valueOf(fakultaet));
     }//GEN-LAST:event_jButton24ActionPerformed
 
     private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
@@ -609,7 +609,9 @@ public class UI extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton26ActionPerformed
 
     private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
-        // TODO add your handling code here:
+        performOperation();
+        result.setText("");
+        currentOperation = 7;
     }//GEN-LAST:event_jButton27ActionPerformed
 
     private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
@@ -636,7 +638,6 @@ public class UI extends javax.swing.JFrame {
 
     private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
     performOperation();
-
     try {
         num1 = Double.parseDouble(result.getText());
     } catch (NumberFormatException f) {
@@ -657,22 +658,20 @@ public class UI extends javax.swing.JFrame {
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {
     performOperation();
-    
     try {
         num1 = Double.parseDouble(result.getText());
     } catch (NumberFormatException f) {
         result.setText("Invalid Format");
         return;
     }
-    
     result.setText("");
     currentOperation = 6;
     }
     
     private void buttonDivisionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonDivisionActionPerformed
-    performOperation();
-    result.setText("");
-    currentOperation = 4;
+        performOperation();
+        result.setText("");
+        currentOperation = 4;
     }//GEN-LAST:event_buttonDivisionActionPerformed
 
     private void button3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button3ActionPerformed
@@ -705,60 +704,63 @@ public class UI extends javax.swing.JFrame {
     }//GEN-LAST:event_buttonPrefixActionPerformed
 
     private void buttonAdditionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonAdditionActionPerformed
-    performOperation();
-    result.setText("");
-    currentOperation = 1;
+        performOperation();
+        result.setText("");
+        currentOperation = 1;
     }//GEN-LAST:event_buttonAdditionActionPerformed
 
     private void buttonSubtractionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSubtractionActionPerformed
-    performOperation();
-    result.setText("");
-    currentOperation = 2;
+        performOperation();
+        result.setText("");
+        currentOperation = 2;
     }//GEN-LAST:event_buttonSubtractionActionPerformed
 
     private void buttonMultiplicationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMultiplicationActionPerformed
-    performOperation();
-    result.setText("");
-    currentOperation = 3;
+        performOperation();
+        result.setText("");
+        currentOperation = 3;
     }//GEN-LAST:event_buttonMultiplicationActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-    performOperation();
-    result.setText(String.valueOf(currentResult));
-    currentOperation = 0;
+        performOperation();
+        result.setText(String.valueOf(currentResult));
+        currentOperation = 0;
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void buttonAC1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonAC1ActionPerformed
        String currentText = result.getText();
-    if (!currentText.isEmpty()) {
-        result.setText(currentText.substring(0, currentText.length() - 1));
+        if (!currentText.isEmpty()) {
+            result.setText(currentText.substring(0, currentText.length() - 1));
     }
     }//GEN-LAST:event_buttonAC1ActionPerformed
     private void performOperation() {
-    try {
-        double num = Double.parseDouble(result.getText());
-        switch (currentOperation) {
-            case 1:
-                currentResult += num;
-                break;
-            case 2:
-                currentResult -= num;
-                break;
-            case 3:
-                currentResult *= num;
-                break;
-            case 4:
-                currentResult /= num;
-                break;
-            case 5:
-                currentResult = Math.log(num1) / Math.log(num);
-                break;
-            case 6:
-                currentResult = num1*100/num;
-                break;
-            default:
-                currentResult = num;
-                break;
+        try {
+            double num = Double.parseDouble(result.getText());
+            switch (currentOperation) {
+                case 1:
+                    currentResult += num;
+                    break;
+                case 2:
+                    currentResult -= num;
+                    break;
+                case 3:
+                    currentResult *= num;
+                    break;
+                case 4:
+                    currentResult /= num;
+                    break;
+                case 5:
+                    currentResult = Math.log(num1) / Math.log(num);
+                    break;
+                case 6:
+                    currentResult = num1*100/num;
+                    break;
+                case 7:
+                    currentResult = Math.pow(num1, num);
+                    break;
+                default:
+                    currentResult = num;
+                    break;
         }
     } catch (NumberFormatException f) {
         result.setText("Invalid Format");
