@@ -304,7 +304,7 @@ public class UI extends javax.swing.JFrame {
 
         jButton29.setBackground(new java.awt.Color(255, 153, 51));
         jButton29.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton29.setText("log10\n");
+        jButton29.setText("log10 ");
         jButton29.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton29ActionPerformed(evt);
@@ -488,7 +488,7 @@ public class UI extends javax.swing.JFrame {
         String z, z2, zt, p1;
         double num1, num2, check;
         double n1n2, square;
-        double p, e;
+        double p, e, l10;
     
     private void button6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button6ActionPerformed
         zt = result.getText();
@@ -561,7 +561,9 @@ public class UI extends javax.swing.JFrame {
     }
     
     private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
-        // TODO add your handling code here:
+        zt = result.getText();
+        l10 = Math.log(Double.valueOf(zt)) / Math.log(2);
+        result.setText(String.valueOf(l10));
     }//GEN-LAST:event_jButton23ActionPerformed
 
     private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
@@ -597,7 +599,9 @@ public class UI extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton28ActionPerformed
 
     private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton29ActionPerformed
-        // TODO add your handling code here:
+        zt = result.getText();
+        l10 = Math.log10(Double.valueOf(zt));
+        result.setText(String.valueOf(l10));
     }//GEN-LAST:event_jButton29ActionPerformed
 
     private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton30ActionPerformed
@@ -605,7 +609,7 @@ public class UI extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton30ActionPerformed
 
     private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_jButton31ActionPerformed
 
     private void jButton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton32ActionPerformed
