@@ -5,6 +5,11 @@
 package taschenrechner;
 
 import java.awt.Color;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.BufferedReader;
+import java.io.FileWriter;
+import java.io.IOException;
 
 /**
  *
@@ -640,7 +645,12 @@ public class UI extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton25ActionPerformed
 
     private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
-        // TODO add your handling code here:
+         try (BufferedReader reader = new BufferedReader(new FileReader("memory.txt"))) {
+        String savedValue = reader.readLine();
+        result.setText(savedValue);
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
     }//GEN-LAST:event_jButton26ActionPerformed
 
     private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
@@ -668,7 +678,12 @@ public class UI extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton29ActionPerformed
 
     private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton30ActionPerformed
-        // TODO add your handling code here:
+     String currentValue = result.getText();
+    try (BufferedWriter writer = new BufferedWriter(new FileWriter("memory.txt"))) {
+        writer.write(currentValue);
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
     }//GEN-LAST:event_jButton30ActionPerformed
 
     private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
