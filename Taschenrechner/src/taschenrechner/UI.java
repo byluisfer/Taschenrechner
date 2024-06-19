@@ -84,6 +84,7 @@ public class UI extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        result.setEditable(false);
         result.setBackground(new java.awt.Color(242, 242, 242));
         result.setColumns(1);
         result.setFont(new java.awt.Font("sansserif", 0, 48)); // NOI18N
