@@ -888,14 +888,35 @@ public class UI extends javax.swing.JFrame {
 
     private void jButton34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton34ActionPerformed
         // TODO add your handling code here:
+        try {
+        double value = Double.parseDouble(result.getText());
+        double tanValue = Math.tan(Math.toRadians(value));
+        result.setText(Double.toString(tanValue));
+    } catch (NumberFormatException e) {
+        result.setText("Error: Invalid input");
+    }
     }//GEN-LAST:event_jButton34ActionPerformed
 
     private void jButton35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton35ActionPerformed
         // TODO add your handling code here:
+        try {
+        double value = Double.parseDouble(result.getText());
+        double cosValue = Math.cos(Math.toRadians(value));
+        result.setText(Double.toString(cosValue));
+    } catch (NumberFormatException e) {
+        result.setText("Error: Invalid input");
+    }
     }//GEN-LAST:event_jButton35ActionPerformed
 
     private void jButton36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton36ActionPerformed
         // TODO add your handling code here:
+        try {
+        double value = Double.parseDouble(result.getText());
+        double sinValue = Math.sin(Math.toRadians(value));
+        result.setText(Double.toString(sinValue));
+    } catch (NumberFormatException e) {
+        result.setText("Error: Invalid input");
+    }
     }//GEN-LAST:event_jButton36ActionPerformed
 
     private void jButton37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton37ActionPerformed
