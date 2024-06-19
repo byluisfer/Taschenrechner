@@ -85,7 +85,6 @@ public class UI extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         result.setEditable(false);
-        result.setBackground(new java.awt.Color(242, 242, 242));
         result.setColumns(1);
         result.setFont(new java.awt.Font("sansserif", 0, 48)); // NOI18N
         result.setRows(1);
@@ -432,6 +431,7 @@ public class UI extends javax.swing.JFrame {
         jButton37.setBackground(new java.awt.Color(255, 153, 51));
         jButton37.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         jButton37.setText("F");
+        jButton37.setToolTipText("yarrak");
         jButton37.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton37ActionPerformed(evt);
@@ -734,11 +734,20 @@ public class UI extends javax.swing.JFrame {
         e.printStackTrace();
     }
     }//GEN-LAST:event_jButton26ActionPerformed
-
+private double firstValue = 0;
+private int operation = 0;
     private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
-        performOperation();
+       try {
+        // Den aktuellen Text im TextArea in ein Double umwandeln
+        firstValue = Double.parseDouble(result.getText());
+        // Das TextArea leeren für die Eingabe des zweiten Wertes
         result.setText("");
-        currentOperation = 7;
+        // Operation auf Power setzen
+        operation = 1;
+    } catch (NumberFormatException e) {
+        // Fehlerbehandlung, wenn die Eingabe keine gültige Zahl ist
+        result.setText("Error: Invalid input");
+    }
     }//GEN-LAST:event_jButton27ActionPerformed
 
     private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
@@ -861,6 +870,19 @@ public class UI extends javax.swing.JFrame {
         performOperation();
         result.setText(String.valueOf(currentResult));
         currentOperation = 0;
+        try {
+        double secondValue = Double.parseDouble(result.getText());
+        double resultValue = 0;
+        
+        if (operation == 1) {
+            resultValue = Math.pow(firstValue, secondValue);
+        }
+        
+        result.setText(Double.toString(resultValue));
+        operation = 0;
+    } catch (NumberFormatException e) {
+        result.setText("Error: Invalid input");
+    }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void buttonAC1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonAC1ActionPerformed

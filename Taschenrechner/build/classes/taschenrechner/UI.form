@@ -786,6 +786,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton37ActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton37.setToolTipText(&quot;yarrak&quot;);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jButton38">
           <Properties>
