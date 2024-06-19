@@ -893,7 +893,7 @@ public class UI extends javax.swing.JFrame {
         double tanValue = Math.tan(Math.toRadians(value));
         result.setText(Double.toString(tanValue));
     } catch (NumberFormatException e) {
-        result.setText("Error: Invalid input");
+        result.setText("Invalid Format");
     }
     }//GEN-LAST:event_jButton34ActionPerformed
 
@@ -904,7 +904,7 @@ public class UI extends javax.swing.JFrame {
         double cosValue = Math.cos(Math.toRadians(value));
         result.setText(Double.toString(cosValue));
     } catch (NumberFormatException e) {
-        result.setText("Error: Invalid input");
+        result.setText("Invalid Format");
     }
     }//GEN-LAST:event_jButton35ActionPerformed
 
@@ -915,7 +915,7 @@ public class UI extends javax.swing.JFrame {
         double sinValue = Math.sin(Math.toRadians(value));
         result.setText(Double.toString(sinValue));
     } catch (NumberFormatException e) {
-        result.setText("Error: Invalid input");
+        result.setText("Invalid Format");
     }
     }//GEN-LAST:event_jButton36ActionPerformed
 
