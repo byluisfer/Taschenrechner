@@ -902,13 +902,13 @@ private boolean isFirstValueSet = false;
     }//GEN-LAST:event_buttonPrefixActionPerformed
 
     private void buttonAdditionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonAdditionActionPerformed
-        performOperation();
+        performOperationWithPriority();
         result.setText("");
         currentOperation = 1;
     }//GEN-LAST:event_buttonAdditionActionPerformed
 
     private void buttonSubtractionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSubtractionActionPerformed
-        performOperation();
+        performOperationWithPriority();
         result.setText("");
         currentOperation = 2;
     }//GEN-LAST:event_buttonSubtractionActionPerformed
@@ -920,9 +920,9 @@ private boolean isFirstValueSet = false;
     }//GEN-LAST:event_buttonMultiplicationActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        performOperation();
+        performOperationWithPriority();
         result.setText(String.valueOf(currentResult));
-        currentOperation = 0;        
+        currentOperation = 0;         
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void buttonAC1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonAC1ActionPerformed
@@ -1035,8 +1035,43 @@ private boolean isFirstValueSet = false;
     }//GEN-LAST:event_jButton41ActionPerformed
     
     private void performOperation() {
-        try {
-            double num = Double.parseDouble(result.getText());
+    try {
+        double num = Double.parseDouble(result.getText());
+        switch (currentOperation) {
+            case 3:
+                currentResult *= num;
+                break;
+            case 4:
+                currentResult /= num;
+                break;
+            case 5:
+                currentResult = Math.log(num1) / Math.log(num);
+                break;
+            case 6:
+                currentResult = num1 * 100 / num;
+                break;
+            case 7:
+                currentResult = Math.pow(num1, num);
+                break;
+            case 8:
+                currentResult = Math.abs(num1 * num / 2);
+                break;
+            case 9:
+                currentResult += num;
+                break;
+        }
+    } catch (NumberFormatException f) {
+        result.setText("Invalid Format");
+        return;
+    }
+}
+    
+    private void performOperationWithPriority() {
+    try {
+        double num = Double.parseDouble(result.getText());
+        if (currentOperation == 3 || currentOperation == 4) {
+            performOperation();
+        } else {
             switch (currentOperation) {
                 case 1:
                     currentResult += num;
@@ -1044,54 +1079,16 @@ private boolean isFirstValueSet = false;
                 case 2:
                     currentResult -= num;
                     break;
-                case 3:
-                    currentResult *= num;
-                    break;
-                case 4:
-                    currentResult /= num;
-                    break;
-                case 5:
-                    currentResult = Math.log(num1) / Math.log(num);
-                    break;
-                case 6:
-                    currentResult = num1*100/num;
-                    break;
-                case 7:
-                    currentResult = Math.pow(num1, num);
-                    break;
-                case 8:
-                    currentResult = Math.abs(num1 * num / 2);
-                    break;
-                case 9:
-                    currentResult += num; 
-                    break;
                 default:
                     currentResult = num;
                     break;
+            }
         }
     } catch (NumberFormatException f) {
         result.setText("Invalid Format");
         return;
-    }   
+    }
 }
-    
-    // Methode zur Berechnung der Länge einer Seite eines Dreiecks
-    public static double seitenlaenge(double x1, double y1, double x2, double y2) {
-        return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
-    }
-
-    // Methode zur Berechnung der Fläche eines Dreiecks mit den Koordinaten seiner Eckpunkte
-    public static double berechneFlaeche(double x1, double y1, double x2, double y2, double x3, double y3) {
-        return Math.abs((x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2)) / 2.0);
-    }
-
-    // Methode zur Berechnung des Umfangs eines Dreiecks mit den Koordinaten seiner Eckpunkte
-    public static double berechneUmfang(double x1, double y1, double x2, double y2, double x3, double y3) {
-        double a = seitenlaenge(x1, y1, x2, y2);
-        double b = seitenlaenge(x2, y2, x3, y3);
-        double c = seitenlaenge(x3, y3, x1, y1);
-        return a + b + c;
-    }
 
     /**
      * @param args the command line arguments
