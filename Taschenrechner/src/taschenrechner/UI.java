@@ -281,6 +281,7 @@ public class UI extends javax.swing.JFrame {
         jButton24.setBackground(new java.awt.Color(255, 153, 51));
         jButton24.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         jButton24.setText("!");
+        jButton24.setToolTipText("Fakultät");
         jButton24.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton24ActionPerformed(evt);
@@ -319,6 +320,7 @@ public class UI extends javax.swing.JFrame {
         jButton28.setBackground(new java.awt.Color(255, 153, 51));
         jButton28.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         jButton28.setText("√\n");
+        jButton28.setToolTipText("Wurzel");
         jButton28.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton28ActionPerformed(evt);
@@ -400,6 +402,7 @@ public class UI extends javax.swing.JFrame {
         jButton34.setBackground(new java.awt.Color(255, 153, 51));
         jButton34.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         jButton34.setText("TAN");
+        jButton34.setToolTipText("Tangens");
         jButton34.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton34ActionPerformed(evt);
@@ -409,6 +412,7 @@ public class UI extends javax.swing.JFrame {
         jButton35.setBackground(new java.awt.Color(255, 153, 51));
         jButton35.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         jButton35.setText("COS");
+        jButton35.setToolTipText("Cosinus ");
         jButton35.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton35ActionPerformed(evt);
@@ -418,6 +422,7 @@ public class UI extends javax.swing.JFrame {
         jButton36.setBackground(new java.awt.Color(255, 153, 51));
         jButton36.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         jButton36.setText("SIN");
+        jButton36.setToolTipText("Sinus");
         jButton36.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton36ActionPerformed(evt);
@@ -427,7 +432,7 @@ public class UI extends javax.swing.JFrame {
         jButton37.setBackground(new java.awt.Color(255, 153, 51));
         jButton37.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         jButton37.setText("F");
-        jButton37.setToolTipText("");
+        jButton37.setToolTipText("Fläche");
         jButton37.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton37ActionPerformed(evt);
@@ -437,6 +442,7 @@ public class UI extends javax.swing.JFrame {
         jButton38.setBackground(new java.awt.Color(255, 153, 51));
         jButton38.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         jButton38.setText("U");
+        jButton38.setToolTipText("Umfang");
         jButton38.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton38ActionPerformed(evt);
@@ -446,6 +452,7 @@ public class UI extends javax.swing.JFrame {
         jButton39.setBackground(new java.awt.Color(255, 153, 51));
         jButton39.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         jButton39.setText("COSH");
+        jButton39.setToolTipText("Cosinus hyperbolicus");
         jButton39.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton39ActionPerformed(evt);
@@ -455,6 +462,7 @@ public class UI extends javax.swing.JFrame {
         jButton40.setBackground(new java.awt.Color(255, 153, 51));
         jButton40.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         jButton40.setText("SINH");
+        jButton40.setToolTipText("Sinus hyperbolicus ");
         jButton40.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton40ActionPerformed(evt);
@@ -464,6 +472,7 @@ public class UI extends javax.swing.JFrame {
         jButton41.setBackground(new java.awt.Color(255, 153, 51));
         jButton41.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         jButton41.setText("TANH");
+        jButton41.setToolTipText("Tangens hyperbolicus");
         jButton41.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton41ActionPerformed(evt);
