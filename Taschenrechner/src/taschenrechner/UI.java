@@ -776,7 +776,7 @@ private int operation = 0;
             isFirstValueSet = false;
         }
     } catch (NumberFormatException e) {
-        result.setText("Error: Invalid input");
+        result.setText("Invalid Format");
         isFirstValueSet = false;
     }
     }//GEN-LAST:event_jButton27ActionPerformed
@@ -843,7 +843,7 @@ private boolean isFirstValueSet = false;
         }
     } catch (NumberFormatException e) {
         // Fehlerbehandlung, wenn die Eingabe keine gültige Zahl ist
-        result.setText("Error: Invalid input");
+        result.setText("Invalid Format");
         // Status zurücksetzen
         isFirstValueSet = false;
     }
@@ -1011,7 +1011,7 @@ private boolean isFirstValueSet = false;
             double resultValue = Math.cosh(input);
             result.setText(Double.toString(resultValue));
         } catch (NumberFormatException e) {
-            result.setText("Error");
+            result.setText("Invalid Format");
         }
     }//GEN-LAST:event_jButton39ActionPerformed
 
@@ -1022,7 +1022,7 @@ private boolean isFirstValueSet = false;
             double resultValue = Math.sinh(input);
             result.setText(Double.toString(resultValue));
         } catch (NumberFormatException e) {
-            result.setText("Error");
+            result.setText("Invalid Format");
         }
     }//GEN-LAST:event_jButton40ActionPerformed
 
@@ -1033,7 +1033,7 @@ private boolean isFirstValueSet = false;
             double resultValue = Math.tanh(input);
             result.setText(Double.toString(resultValue));
         } catch (NumberFormatException e) {
-            result.setText("Error");
+            result.setText("Invalid Format");
         }
     }//GEN-LAST:event_jButton41ActionPerformed
     
