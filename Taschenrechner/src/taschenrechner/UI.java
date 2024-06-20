@@ -426,7 +426,7 @@ public class UI extends javax.swing.JFrame {
         jButton37.setBackground(new java.awt.Color(255, 153, 51));
         jButton37.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         jButton37.setText("F");
-        jButton37.setToolTipText("yarrak");
+        jButton37.setToolTipText("");
         jButton37.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton37ActionPerformed(evt);
