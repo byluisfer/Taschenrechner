@@ -902,13 +902,13 @@ private boolean isFirstValueSet = false;
     }//GEN-LAST:event_buttonPrefixActionPerformed
 
     private void buttonAdditionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonAdditionActionPerformed
-        performOperationWithPriority();
+        performOperation();
         result.setText("");
         currentOperation = 1;
     }//GEN-LAST:event_buttonAdditionActionPerformed
 
     private void buttonSubtractionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSubtractionActionPerformed
-        performOperationWithPriority();
+        performOperation();
         result.setText("");
         currentOperation = 2;
     }//GEN-LAST:event_buttonSubtractionActionPerformed
@@ -920,7 +920,7 @@ private boolean isFirstValueSet = false;
     }//GEN-LAST:event_buttonMultiplicationActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        performOperationWithPriority();
+        performOperation();
         result.setText(String.valueOf(currentResult));
         currentOperation = 0;         
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -1038,6 +1038,12 @@ private boolean isFirstValueSet = false;
     try {
         double num = Double.parseDouble(result.getText());
         switch (currentOperation) {
+            case 1:
+                currentResult += num;
+                break;
+            case 2:
+                currentResult -= num;
+                break;
             case 3:
                 currentResult *= num;
                 break;
@@ -1059,30 +1065,9 @@ private boolean isFirstValueSet = false;
             case 9:
                 currentResult += num;
                 break;
-        }
-    } catch (NumberFormatException f) {
-        result.setText("Invalid Format");
-        return;
-    }
-}
-    
-    private void performOperationWithPriority() {
-    try {
-        double num = Double.parseDouble(result.getText());
-        if (currentOperation == 3 || currentOperation == 4) {
-            performOperation();
-        } else {
-            switch (currentOperation) {
-                case 1:
-                    currentResult += num;
-                    break;
-                case 2:
-                    currentResult -= num;
-                    break;
-                default:
+            default:
                     currentResult = num;
                     break;
-            }
         }
     } catch (NumberFormatException f) {
         result.setText("Invalid Format");
